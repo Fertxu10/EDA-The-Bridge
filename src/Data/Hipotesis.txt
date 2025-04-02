@@ -1,0 +1,90 @@
+Nuevas hipotesis:
+
+¿Tener más posesión aumenta las probabilidades de ganar?
+Columnas clave:
+
+Ball_Possession_Home, home_score, away_score
+
+Idea: Analiza si tener más posesión realmente correlaciona con la victoria
+Extras: Puedes segmentar por liga o por temporada
+
+¿Los equipos con más tiros a puerta ganan más partidos?
+
+Columnas:
+
+Shots_on_Goal_Home, Goal_Attempts_Home, home_score, etc.
+
+Idea: ¿Importa más la cantidad o la calidad de los tiros?
+Extra: Puedes usar expected_goals_xg_home si tienes suficientes no nulos
+
+ ¿Jugar en casa realmente da ventaja?
+
+Columnas:
+
+home_score, away_score, venue, attendance
+
+Idea: Compara medias de goles y victorias local vs visitante
+
+
+¿Los porteros más exigidos son de equipos que ganan menos?
+
+Columnas:
+
+Goalkeeper_Saves_Home, home_score, away_score
+
+Idea: Analiza si tener más paradas significa que te están dominando (y pierdes más)
+
+¿El número de sustituciones tiene impacto en los goles marcados?
+
+Columnas:
+
+home_team_substitutions, home_score, away_score
+
+Idea: Compara partidos con 0, 1, 2, 3, 4 o 5 cambios y media de goles anotados
+Complemento: Puedes incluir minuto del cambio si tienes *_current_time
+
+¿Recibir más tarjetas amarillas afecta negativamente al resultado?
+
+Columnas:
+
+Yellow_Cards_Home, home_score, away_score
+
+Idea: Compara media de goles vs número de tarjetas
+También: Analiza si equipos más “duros” reciben más o menos goles
+
+
+
+
+
+Hipotesis primeras:
+
+¿Está cambiando el fútbol a un deporte más de atletas que de técnicos? (la tuya)
+
+Datos a buscar:
+
+Distancia recorrida por partido (por equipo y por jugador)
+Sprints o aceleraciones por partido
+Duelos físicos ganados
+Faltas cometidas
+Pases exitosos vs regates
+
+¿Se defiende más con presión alta que con bloque bajo?
+¿Se ha impuesto el “gegenpressing” al estilo italiano defensivo?
+
+Datos a buscar:
+
+PPDA (passes per defensive action)
+Recuperaciones en campo rival
+Presiones por zona del campo
+
+¿Se ha perdido el rol del “10”?
+¿Existen menos mediapuntas creativos en el fútbol moderno?
+
+Datos a buscar:
+
+Jugadores en posición de mediapunta en alineaciones
+Participación en goles (asistencias, key passes)
+Comparativa por décadas
+
+
+
