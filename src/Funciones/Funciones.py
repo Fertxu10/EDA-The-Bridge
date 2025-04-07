@@ -1,3 +1,6 @@
+import pandas as pd # type: ignore
+import re
+import numpy as np # type: ignore
 def imputar_faltas(df, equipo_col, fouls_col):
     df_resultado = df.copy()
     equipos = df[equipo_col].unique()
